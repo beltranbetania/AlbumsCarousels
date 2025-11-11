@@ -15,7 +15,9 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
+import com.example.albumschallenge.R
 import com.example.albumschallenge.data.model.Album
 import com.example.albumschallenge.data.model.Photo
 
@@ -40,7 +42,7 @@ fun AlbumCarousel(
             )
 
             Text(
-                text = "Ver más",
+                text = stringResource(R.string.see_more),
                 style = MaterialTheme.typography.bodyMedium.copy(color = MaterialTheme.colorScheme.primary),
                 modifier = Modifier
                     .clickable { onSeeMoreClick() }

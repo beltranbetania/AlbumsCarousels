@@ -14,6 +14,8 @@ import org.koin.androidx.compose.koinViewModel
 import androidx.compose.foundation.lazy.rememberLazyListState
 import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.snapshotFlow
+import androidx.compose.ui.res.stringResource
+import com.example.albumschallenge.R
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
@@ -36,7 +38,7 @@ fun HomeScreen(
     }
 
     Scaffold(
-        topBar = { TopAppBar(title = { Text("Albums") }) }
+        topBar = { TopAppBar(title = { Text(stringResource(R.string.albums)) }) }
     ) { innerPadding ->
         when {
             state.isLoading -> Box(

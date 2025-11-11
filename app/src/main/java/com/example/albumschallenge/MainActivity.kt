@@ -53,7 +53,7 @@ fun MainContent() {
                         navController.navigatePhoto(photo)
                     },
                     onSeeMore = { albumId ->
-                        Toast.makeText(context, "Próximamente", Toast.LENGTH_SHORT).show()
+                        Toast.makeText(context, context.getString(R.string.coming_soon), Toast.LENGTH_SHORT).show()
                     }
                 )
             }
