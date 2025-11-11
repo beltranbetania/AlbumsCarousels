@@ -20,9 +20,7 @@ media3 = "1.4.1"
 mockk = "1.13.11"
 coroutines-test = "1.8.1"
 compose = "1.7.0"
-robolectric = "4.11.1"
-compose-ui-test = "1.7.5"
-androidx-test-core = "1.5.0"
+turbine = "1.1.0"
 
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
@@ -53,9 +51,10 @@ media3-ui = { module = "androidx.media3:media3-ui", version.ref = "media3" }
 mockk = { module = "io.mockk:mockk", version.ref = "mockk" }
 coroutines-test = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-test", version.ref = "coroutines-test" }
 compose-ui-test-junit4 = { module = "androidx.compose.ui:ui-test-junit4", version.ref = "compose" }
-compose-ui-test-manifest = { module = "androidx.compose.ui:ui-test-manifest", version.ref = "compose" }
-robolectric = { module = "org.robolectric:robolectric", version.ref = "robolectric" }
-androidx-test-core = { module = "androidx.test:core", version.ref = "androidx-test-core" }
+turbine = { module = "app.cash.turbine:turbine", version.ref = "turbine" }
+kotlin-test = { group = "org.jetbrains.kotlin", name = "kotlin-test", version.ref = "kotlin" }
+
+
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }
