@@ -77,4 +77,14 @@ dependencies {
     // ExoPlayer
     implementation(libs.media3.exoplayer)
     implementation(libs.media3.ui)
+
+    // testing
+    testImplementation(libs.mockk)
+    testImplementation(libs.coroutines.test)
+    testImplementation(libs.compose.ui.test.junit4)
+    debugImplementation(libs.compose.ui.test.manifest)
+
+    testImplementation(libs.robolectric)
+    testImplementation(libs.androidx.test.core)
+
 }
