@@ -9,7 +9,7 @@ Aplicación Android desarrollada en **Kotlin** con **Jetpack Compose**, que cons
 ###  Home  
 - Consume los endpoints `/albums` y `/photos`.  
 - Muestra una lista **vertical de carruseles**, cada uno con imágenes horizontales.
-- La lista de albumes tiene paginación implementada, por lo que al llegar al final de la pagina con scroll vertical, se cargaran mas carruseles
+- La lista de albumes tiene paginación implementada, por lo que al llegar al final de la pagina con scroll vertical, se cargarán mas carruseles
 - Cada álbum carga solo **10 fotos** 
 - Maneja estados de red: **Loading**, **Success** y **Error**.  
 
