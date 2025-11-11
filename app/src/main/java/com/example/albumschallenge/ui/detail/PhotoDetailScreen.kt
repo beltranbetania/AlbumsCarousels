@@ -25,6 +25,7 @@ import androidx.media3.exoplayer.ExoPlayer
 import androidx.media3.ui.PlayerView
 import androidx.navigation.NavController
 import com.example.albumschallenge.R
+import com.example.albumschallenge.utils.SAMPLE_VIDEO_URL
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
@@ -61,7 +62,7 @@ private fun PhotoDetailContent(modifier: Modifier = Modifier, photo: Photo) {
     val player = remember {
         ExoPlayer.Builder(context).build().apply {
             val mediaItem = MediaItem.fromUri(
-                "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"
+                SAMPLE_VIDEO_URL
             )
             setMediaItem(mediaItem)
             prepare()
