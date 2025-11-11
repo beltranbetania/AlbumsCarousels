@@ -4,6 +4,12 @@ import com.example.albumschallenge.data.model.Album
 import com.example.albumschallenge.data.model.Photo
 
 class AlbumRepository(private val api: ApiService) {
-    suspend fun getAlbums(): List<Album> = api.getAlbums()
-    suspend fun getPhotosByAlbum(albumId: Int): List<Photo> = api.getPhotosByAlbum(albumId)
+
+    suspend fun getAlbums(start: Int, limit: Int): List<Album> {
+        return api.getAlbumsPaginated(start, limit)
+    }
+
+    suspend fun getPhotosByAlbum(albumId: Int): List<Photo> {
+        return api.getPhotosByAlbum(albumId)
+    }
 }

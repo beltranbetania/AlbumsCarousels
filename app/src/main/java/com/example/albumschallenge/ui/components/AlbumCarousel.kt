@@ -29,7 +29,6 @@ fun AlbumCarousel(
             items(photos) { photo ->
                 PhotoItem(photo, onClick = { onPhotoClick(photo) })
             }
-          //  item { SeeMoreItem(onClick = onSeeMoreClick) }
         }
     }
 }

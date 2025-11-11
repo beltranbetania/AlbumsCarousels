@@ -56,7 +56,6 @@ private fun PhotoDetailContent(modifier: Modifier = Modifier, photo: Photo) {
             .fillMaxSize()
             .padding(16.dp)
     ) {
-        // Imagen grande
         Card(
             modifier = Modifier
                 .fillMaxWidth()
@@ -92,11 +91,6 @@ private fun PhotoDetailContent(modifier: Modifier = Modifier, photo: Photo) {
     }
 }
 
-/**
- * Helper para navegar (ejemplo).
- * Uso:
- * navController.navigatePhoto(photo)
- */
 fun androidx.navigation.NavController.navigatePhoto(photo: Photo) {
     val json = Uri.encode(Gson().toJson(photo))
     this.navigate("detail?photo=$json")
