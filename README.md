@@ -1,4 +1,5 @@
-# ✅ Albums Challenge  
+# ✅ Albums Carousels
+  
 
 Aplicación Android desarrollada en **Kotlin** con **Jetpack Compose**, que consume la API pública de [JSONPlaceholder](https://jsonplaceholder.typicode.com/) para mostrar álbumes e imágenes, con una pantalla de detalle y un video de ejemplo.  
 
